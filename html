@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {
+box-sizing: border-box;
+}
+
+input[type=text]
+{
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid ;
+  border-radius: 4px;
+  margin: 8px 0px;
+  
+}
+  
+button[type=submit]:hover
+ {
+  background-color: orange;
+}
+button[type=reset]:hover
+ {
+  background-color: orange;
+}
+
+.container {
+  max-width: 500px;
+  float:center;
+  margin: auto;
+  background-color:grey;
+  padding: 20px;
+}
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: green;
+}
+</style>
+</head>
+<body>
+
+<h1><center>Contact Form</h1>
+
+<div class="container">
+  <form >
+    <label>Username</label>
+    <input type="text" name="username" required>
+    <label>Email</label>
+    <input type="text" name="email" required>
+    <label>Address</label>
+    <input type="text" name="address" required >
+    <label>Mobile Number</label>
+   <input type="text" name="mobile" required>
+    <label>Age(18-60)</label>
+    <input type="text" name="age" required>
+    <label>Education</label>
+   <input type="text" name="Education" required>
+    <button type="submit" class="cancelbtn" onclick="check(this.form)">Submit</button>
+    <button type="reset" class="cancelbtn">Cancel</button>
+  </form>
+  
+</div>
+
+</body>
+</html>
+
+
